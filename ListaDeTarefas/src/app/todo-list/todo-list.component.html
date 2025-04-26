@@ -1,0 +1,36 @@
+<div class="container">
+    <h1 class="text-center display-4 mt-5">
+        Lista de Tarefas
+    </h1>
+    <hr>
+    <form class="col-md-6 mx-auto" (ngSubmit)="onSubmit(taskForm)" #taskForm="ngForm">
+        <div class="mb-4">
+            <label for="task" class="form-label">Tarefa</label>
+            <input type="text" class="form-control" id="task" ngModel name="task"
+            required placeholder="Digite a tarefa a ser realizada">
+            <small class="text-danger">Campo Obrigatório</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Adicionar Tarefa</button>
+    </form>
+
+    <hr>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tarefa</th>
+                <th scope="col">Status</th>
+                <th scope="col">Exluir</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td class="w-75">Nome da Tarefa</td>
+                <td><input type="checkbox"> Finalizado</td>
+                <td><button class="btn btn-sm btn-danger">Excluir</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

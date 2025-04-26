@@ -1,0 +1,10 @@
+Criar um projeto Angular
+ng new NomeDoProjeto
+
+Executar o projeto 
+ng serve -o
+
+Criar um componente
+ng g c todo-list
+
+npm i bootstrap
